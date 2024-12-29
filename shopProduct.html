@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>E-commerce shopping Card</title>
+    <link rel="stylesheet" href="shopProduct.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>E-Shop</h1>
+        <div>
+          <a href="">Products</a>
+          <a href="">Card</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="products">
+        <h2>Manage Products</h2>
+        <form id="product-form">
+          <input type="text" placeholder="Product name" id="product-name" />
+          <input type="number" placeholder="price" id="product-price" />
+          <textarea name="" id="product-description" required> </textarea>
+          <input type="url" placeholder="Image URL" id="product-image" />
+          <button type="submit">Add Product</button>
+        </form>
+        <div id="product-container" class="grid"></div>
+      </section>
+      <section id="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-container"></div>
+        <p class="total">Total : <span id="total-price">0</span></p>
+      </section>
+    </main>
+    <script src="shopProduct.js"></script>
+  </body>
+</html>
